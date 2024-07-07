@@ -20,7 +20,8 @@
             services
                 .AddSwaggerGen()
                 .AddSingleton(configuration)
-                .AddEndpointsApiExplorer();
+                .AddEndpointsApiExplorer()
+                .AddRazorPages();
 
         }
 
@@ -41,6 +42,7 @@
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapRazorPages();
             });
         }
     }

@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @{
+        string oembedUrl = "https://" + Context.Request.Host.Host + "/oembed";
+    }
+    <link rel="alternate" type="application/json+oembed"
+          href="https://oembed-tests.yawaflua.ru/oembed/https://oembed-tests.yawaflua.ru/pay/yawaflua&format=json"
+          title="Donate to yawaflua now" />
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
