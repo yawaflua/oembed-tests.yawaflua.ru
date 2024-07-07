@@ -10,6 +10,8 @@ namespace OembedTests.Controllers
         [HttpGet]
         public async Task<IActionResult> GetOembed([FromQuery]string url, [FromQuery] string? format = "json")
         {
+            // This is just example
+            // TODO: rework this plz
             var userName = url.Replace("https://oembed-test.yawaflua.ru/pay/", "");
             var response = $@"{{
 	""version"": ""1.0"",

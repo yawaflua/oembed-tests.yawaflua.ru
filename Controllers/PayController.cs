@@ -4,7 +4,7 @@ namespace OembedTests.Controllers
 {
     [ApiController]
     [Route("pay")]
-    public class WeatherForecastController : ControllerBase
+    public class PayController : ControllerBase
     {
         
         [HttpGet("/{userName}")]
